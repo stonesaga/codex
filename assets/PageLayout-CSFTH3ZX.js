@@ -1,0 +1,1 @@
+import{j as e}from"./index-DDJSLbss.js";function n({title:a,children:s}){return e.jsxs("div",{className:"page-container",children:[e.jsx("h1",{className:"page-title",children:a}),e.jsx("div",{className:"page-content",children:s})]})}export{n as P};
