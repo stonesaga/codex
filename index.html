@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/codex/favicon.svg" />
+    <link rel="manifest" href="/codex/manifest.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0095ae" />
+    <title>Stonesaga Codex</title>
+    <!-- First-paint loader: visible before React and application bundles start. -->
+    <style>
+      #startup-preloader {
+        position: fixed; inset: 0; z-index: 2147483647;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        gap: 16px; background: #101719; color: #f4f7f8;
+        font: 500 16px/1.5 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      #startup-preloader .startup-spinner {
+        width: 42px; height: 42px; border: 4px solid rgba(255,255,255,.2);
+        border-top-color: #0095ae; border-radius: 50%;
+        animation: startup-spin .8s linear infinite;
+      }
+      #startup-preloader .startup-caption { opacity: .86; text-align: center; padding: 0 24px; }
+      @keyframes startup-spin { to { transform: rotate(360deg); } }
+      @media (prefers-reduced-motion: reduce) {
+        #startup-preloader .startup-spinner { animation-duration: 2s; }
+      }
+    </style>
+    <script type="module" crossorigin src="/codex/assets/index-DEIzKU81.js"></script>
+    <link rel="stylesheet" crossorigin href="/codex/assets/index-BtAwY3WM.css">
+  </head>
+  <body>
+    <div id="startup-preloader" role="status" aria-live="polite">
+      <div class="startup-spinner" aria-hidden="true"></div>
+      <div class="startup-caption">Подготовка приложения к работе…</div>
+    </div>
+    <div id="root"></div>
+  </body>
+</html>
