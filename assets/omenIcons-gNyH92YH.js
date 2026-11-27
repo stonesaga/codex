@@ -1,0 +1,1 @@
+import{t as o}from"./index-BPnB7TCU.js";const e=[{name:"Comet",image:o.comet},{name:"Cloud",image:o.cloud},{name:"Moon",image:o.moon},{name:"Star",image:o.star},{name:"Sun",image:o.sun}],t={Comet:"Комета",Cloud:"Облако",Moon:"Луна",Star:"Звезда",Sun:"Солнце"},s=a=>e.find(n=>n.name===a);export{t as a,s as g,e as o};
